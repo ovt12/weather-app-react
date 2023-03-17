@@ -1,9 +1,11 @@
-import "./SearchBox.scss";
 
-const SearchBox = ({ handleInput }) => {
+
+const SearchBox = ({ handleInput}) => {
   return (
     <form className="search-box">
-      <input type="text" onChange={handleInput} />
+      <input type="text"
+      onInput={handleInput}
+      onChange={handleInput} />
     </form>
   );
 };

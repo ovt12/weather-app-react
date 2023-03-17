@@ -1,16 +1,14 @@
 import React from "react";
+import SearchBox from "../../Components/SearchBox/SearchBox";
 
-const Nav = ({ handleInput }) => {
+const Nav = ({ handleInput, searchTerm, filtered}) => {
 
 
     return (
       <div className="Nav__input">
-      <input
-        className="searchbox"
-        type="text"
-        placeholder="Search Location"
-        onChange={handleInput}
-      />
+      <SearchBox 
+      handleInput={handleInput}
+      searchTerm={searchTerm}/>
     </div>
      
     );
