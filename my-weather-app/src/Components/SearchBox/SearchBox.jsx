@@ -1,12 +1,14 @@
 
 
-const SearchBox = ({ handleInput}) => {
+const SearchBox = ({ handleInput, searchTerm }) => {
   return (
-    <form className="search-box">
+    <form className="searchbox">
       <input type="text"
+      value={searchTerm}
       onInput={handleInput}
-      onChange={handleInput} />
+      placeholder={"Enter a location"}/>
     </form>
+  
   );
 };
 

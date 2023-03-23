@@ -1,5 +1,18 @@
+* {
+  background-color: #deeadf;
+}
 .App {
   text-align: center;
+  background-color: #deeadf;
+  height: 100vh;
+}
+
+.card {
+  background-color: beige;
+}
+
+.App-header {
+  background-color: #deeadf;
 }
 
 .App-logo {
@@ -7,21 +20,31 @@
   pointer-events: none;
 }
 
+.Main {
+  background-color: beige;
+  border: solid 2px rgb(13, 6, 6);
+  padding: 20%;
+  margin: 10%;
+  border-radius: 35px;
+}
+
+.searchbox {
+  background-color: beige;
+}
+
+img {
+  height: 20vh;
+  width: 30vw;
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;

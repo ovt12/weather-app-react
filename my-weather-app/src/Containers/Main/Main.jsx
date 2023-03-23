@@ -5,16 +5,19 @@ import React from "react";
 const Main = ({ weatherList }) => {
 
   console.log(weatherList);
-  const weatherJSON = weatherList.map((weatherList) => {
+  const weatherJSON = weatherList.map((weatherList, index) => {
 
     return ( 
-    <WeatherCardList 
-    city={weatherList.location.name}
-    region={weatherList.location.region}
-    icon={weatherList.current.condition.icon}
-    temp={weatherList.current.temp_c}
-    update={weatherList.current.last_updated}
-    />
+    <div className="Main__card"> 
+      <WeatherCardList 
+      key={index}
+      city={weatherList.location.name}
+      region={weatherList.location.region}
+      icon={weatherList.current.condition.icon}
+      temp={weatherList.current.temp_c}
+      update={weatherList.current.last_updated}
+      />
+    </div> 
     );
   });
   return <div className="Main__container">{weatherJSON}</div>;
