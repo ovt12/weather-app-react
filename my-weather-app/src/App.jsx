@@ -5,7 +5,7 @@ import SearchBox from './Components/SearchBox/SearchBox';
 
 function App() {
 
-  const [searchTerm, setSearchTerm] = useState("Manchester");
+  const [searchTerm, setSearchTerm] = useState("");
   const [weatherList, setWeatherList] = useState([]);
 
    // FUNCTION TO HANDLE THE SEARCH TERM INPUT
@@ -13,8 +13,6 @@ function App() {
     setSearchTerm(event.target.value);
 
   };
-
-
 
    // USES USESTATE TO SET THE URL AS THE DEFAULT TO UPDATE THE BEER LIST
    const getWeather = async (searchTerm) => {
@@ -27,8 +25,6 @@ function App() {
     const weatherData = await result.json();
     setWeatherList([weatherData]);
     }
-
-
   };
 
   useEffect(() => {

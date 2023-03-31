@@ -4,7 +4,9 @@ import React from "react";
 
 const Main = ({ weatherList }) => {
 
-  console.log(weatherList);
+  if (weatherList.length === 0) {
+    return <p>Please enter a location!</p>
+  }
   const weatherJSON = weatherList.map((weatherList, index) => {
 
     return ( 

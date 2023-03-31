@@ -4,7 +4,7 @@ import { handleGetForecasts, handlePostForecast } from "./controller/index.js";
 
 
 const app = express();
-const port = process.env.PORT || 3306;
+const port = process.env.PORT || 3000;
 
 try {
   await sequelize.sync();
