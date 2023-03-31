@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Weather App</h1>
+        <h1>Weather Api</h1>
       </header>
     <div className='Main'>
       <SearchBox handleInput={handleInput} searchTerm={searchTerm}/>

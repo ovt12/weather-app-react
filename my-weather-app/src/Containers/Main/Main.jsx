@@ -13,6 +13,7 @@ const Main = ({ weatherList }) => {
       key={index}
       city={weatherList.location.name}
       region={weatherList.location.region}
+      country={weatherList.location.country}
       icon={weatherList.current.condition.icon}
       temp={weatherList.current.temp_c}
       update={weatherList.current.last_updated}
